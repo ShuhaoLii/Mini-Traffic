@@ -4,6 +4,8 @@ This repository contains the PyTorch implementation of MiniTraffic, our proposed
 
 ### Key Designs:
 
+![MiniTraffic Overview](./fig/Mini_Traffic.png "Overview of MiniTraffic.")
+
 - **Frequency Domain Stability Augmentation:** This technique uses the statistical correlation between road-level and lane-level data to simulate the scarce lane-level traffic data, forming the basis for effective cross-granularity transfer prediction.
 - **Contrastive Clustering Backbone:** By leveraging the similarity between lane segments, this approach clusters spatio-temporally similar patches through contrastive learning. Graph attention convolution is then applied within these clusters, partitioning the entire spatio-temporal graph into multiple smaller graphs, thereby reducing computational complexity.
 
